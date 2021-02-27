@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">    
+    <title>Aesthetic's GymTRY4</title>
+  </head>
+  <body>
+      <div class="wrapper">
+        <div class="wrapperLogo-Showcase">
+          <div class="logo">
+            <img class="logo__pic" src="img/logo_color.png" alt="#">
+          </div>
+          <div class="showcase">
+            <div class="showcase__frame">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img class="swiper__pic" src="img/gym3.jpg" alt="#"></div>
+                  <div class="swiper-slide"><img class="swiper__pic" src="img/gym2.jpg" alt="#"></div>
+                  <div class="swiper-slide"><img class="swiper__pic" src="img/gym1.jpg" alt="#"></div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>  
+          </div>  
+        </div>
+        <div class="wrapperContent-UserForm">
+         <div class="content">
+            <p>BECOME STRONG AND AESTHETIC!</p>
+            <p>With the help of certified trainers and state-of-the-art fitness equipment, 
+              training has never been easier! <br>Let's build the body of your dreams together!</p>
+          </div>
+          <div class="userForm">
+            <p>FILL THE FORM - GET FREE TWO-WEEK MEMBERSHIP!</p>
+            <form id="form">
+              <div class="form-control"> 
+                <p>Name:</p>
+                <input type="text" id="username" placeholder="Name">
+                <small>some error</small>
+              </div>
+              <div class="form-control"> 
+                <p>Last name:</p>
+                <input type="text" id="userLastname" placeholder="Last name">
+                <small>some error</small>
+              </div>
+              <div class="form-control"> 
+                <p>E-Mail:</p>
+                <input type="email" id="userMail" placeholder="example@mail.com">
+                <small>some error</small>
+              </div>
+              <div class="form-control">   
+                <p>Phone number:</p>
+                <input type="tel" id="phoneNumber"  placeholder="+__-___-__-__">
+                <small>some error</small>
+              </div>  
+              <button type="submit">GET FREE MEMBERSHIP!</button>
+            </form>
+          </div>
+        </div>
+      </div>
+  </body>
+  <div class="popup" id="popup">
+    <div class="popup__body">
+      <div class="popup__content">
+        <div class="popup__title">Success!</div>
+        <div class="popup__text">Your form have been submitted. Our agent will contact You soon.</div>
+        <a class="popup__close close-popup" id="popupcloseBtn">OK</a>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script async src="js/script.js"></script>
+</html>
