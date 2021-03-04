@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/style.css">
+    <title>Baking Soda!</title>
+</head>
+<body>
+    <img class="image" src="./img/logo.jfif">
+    <div class="timer" id = "timer">
+        <h2 class="timer__sub">Purchase now to get 50% discount!</h2>
+        <p class="timer__count" id="timer__count">0 DD : 0 HH: 0 MM</p>
+    </div>
+    <div class="about">
+        <div class="container">
+            <div class="about__info">
+                <h1 class="about__title">Soviet Baking Soda - the ultimate product</h1>
+                <p class="about__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim est explicabo delectus, nulla adipisci animi voluptates minima dolorum magnam consequatur debitis aperiam impedit nihil distinctio omnis blanditiis, doloremque, id reiciendis!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore incidunt laudantium enim libero exercitationem itaque eligendi, voluptas tempore, nihil dolores iure doloremque in, aliquid ipsam sit. Voluptate voluptates excepturi non.
+                </p>
+            </div>
+            <div class="about__picture">
+                <img class="about__img" src="./img/sodaTitle.png" alt="image">
+            </div>
+        </div>
+    </div>
+    <div class="blockWrapper">
+        <div class="blockContainer">
+            <div class="block1">
+                <img class="block__image" src="./img/soda.png" alt="image">
+                <h2 class="block__title">6 pack <span class="oldprice">9.99$</span> <span class="price1">4.99$</span></h2>
+                <p class="block__subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, alias?</p>
+                <button class="block__button">Buy!</button>
+            </div>
+            <div class="block2">
+                <img class="block__image" src="./img/soda.png" alt="image">
+                <h2 class="block__title">30 pack <span class="oldprice">19.99$</span> <span class="price2">9.99$</span></h2>
+                <p class="block__subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, alias?</p>
+                <button class="block__button">Buy!</button>
+            </div>
+            <div class="block3">
+                <img class="block__image" src="./img/soda.png" alt="image">
+                <h2 class="block__title">90 pack <span class="oldprice">29.99$</span> <span class="price3">19.99$</span></h2>
+                <p class="block__subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, alias?</p>
+                <button class="block__button">Buy!</button>
+            </div>
+        </div>
+    </div>
+    <!--THIS IS TO BE REALISED SOON-->
+    <div class="popup" id="popup">
+        <div class="popup__body">
+            <h2 class="popup__title">Please, fill in your card information to order [product name]</h2>
+            <form action="" class="popup__content">
+                <div class="popup__cardfront">
+                    <h6>front-side</h6>
+                    <input class = "popup__cardnumber" type="tel" placeholder="Card number">
+                    <div class="popup__date">
+                        <span>Expiration date:</span>
+                        <select name="month" id="month">
+                            <option value="1">01</option>
+                            <option value="2">02</option>
+                            <option value="3">03</option>
+                            <option value="4">04</option>
+                            <option value="5">05</option>
+                            <option value="6">06</option>
+                            <option value="7">07</option>
+                            <option value="8">08</option>
+                            <option value="9">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <span>/</span>
+                        <select name="year" id="year">
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                            <option value="32">32</option>
+                            <option value="33">33</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="popup__cardback">
+                    <h6>back-side</h6>
+                    <div class="popup__cardback-line">Lorem iosum dolor sit amet.</div>
+                    <input class="popup__cvv" type="password" id="cvv" placeholder="CVV/CVC2">
+                </div>
+            </form>
+            <button class="popup__button">Submit!</button>
+        </div>
+    </div>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
