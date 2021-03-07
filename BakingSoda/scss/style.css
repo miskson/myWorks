@@ -246,10 +246,10 @@ body {
   text-shadow: 2px 2px 5px #040000;
 }
 
-.popup .popup__body .popup__button {
+.popup .popup__body .popup__button, .popup .popup__body .popup__closebutton {
   font-size: 30px;
   padding: 10px 30px 10px 30px;
-  margin-top: 30px;
+  margin: 10px;
   border: 5px solid #edd500;
   -webkit-box-shadow: 5px 5px #e9a005;
           box-shadow: 5px 5px #e9a005;
@@ -261,13 +261,14 @@ body {
   transition: 0.1s;
 }
 
-.popup .popup__body .popup__button:hover {
+.popup .popup__body .popup__button:hover, .popup .popup__body .popup__closebutton:hover {
   background-color: #040000;
   color: #e9e4e0;
 }
 
-.popup .popup__body .popup__button:active {
+.popup .popup__body .popup__button:active, .popup .popup__body .popup__closebutton:active {
   background-color: #edd500;
+  color: #040000;
 }
 
 .popup .popup__body .popup__content {
@@ -390,6 +391,7 @@ body {
     overflow-y: auto;
   }
   .popup .popup__content {
+    width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -406,7 +408,7 @@ body {
     padding: 10px;
   }
   .popup .popup__content .popup__cardfront .popup__cardnumber {
-    min-width: 90%;
+    min-width: 100%;
   }
   .popup .popup__content .popup__cardback {
     max-height: 200px;

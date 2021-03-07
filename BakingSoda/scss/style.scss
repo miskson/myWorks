@@ -150,10 +150,10 @@ body{
             text-align: center;
             text-shadow: 2px 2px 5px #040000;
         }
-        .popup__button {
+        .popup__button, .popup__closebutton{
             font-size: 30px;
             padding: 10px 30px 10px 30px;
-            margin-top: 30px;
+            margin: 10px;
             border: 5px solid #edd500;
             box-shadow: 5px 5px #e9a005;
             background-color: #e9e4e0;
@@ -161,12 +161,13 @@ body{
             cursor: pointer;
             /* -webkit-*/transition: 0.1s;
         }
-        .popup__button:hover {
+        .popup__button:hover, .popup__closebutton:hover{
             background-color: #040000;
             color: #e9e4e0;
         }
-        .popup__button:active{
+        .popup__button:active, .popup__closebutton:active{
             background-color:#edd500;
+            color: #040000;
         }
         .popup__content {
             width: 50%;
@@ -249,6 +250,7 @@ body{
     .popup{
         overflow-y: auto;
         .popup__content {
+            width: 50%;
             display: flex;
             flex-direction: column;
             background-color: transparent;
@@ -258,7 +260,7 @@ body{
             .popup__cardfront {
                 padding: 10px;
                 .popup__cardnumber {
-                    min-width: 90%;
+                    min-width: 100%;
                 }
             }
             .popup__cardback {

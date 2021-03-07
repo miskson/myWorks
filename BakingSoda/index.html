@@ -30,28 +30,28 @@
         <div class="blockContainer">
             <div class="block1">
                 <img class="block__image" src="./img/soda.png" alt="image">
-                <h2 class="block__title">6 pack <span class="oldprice">9.99$</span> <span class="price1">4.99$</span></h2>
+                <h2 class="block__title">6 pack <span class="oldprice">9.99$</span> <span class="price">4.99$</span> </h2>
                 <p class="block__subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, alias?</p>
-                <button class="block__button">Buy!</button>
+                <button class="block__button" id="firstButton">Buy!</button>
             </div>
             <div class="block2">
                 <img class="block__image" src="./img/soda.png" alt="image">
-                <h2 class="block__title">30 pack <span class="oldprice">19.99$</span> <span class="price2">9.99$</span></h2>
+                <h2 class="block__title">30 pack <span class="oldprice">19.99$</span> <span class="price">9.99$</span> </h2>
                 <p class="block__subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, alias?</p>
-                <button class="block__button">Buy!</button>
+                <button class="block__button" id="secondButton">Buy!</button>
             </div>
             <div class="block3">
                 <img class="block__image" src="./img/soda.png" alt="image">
-                <h2 class="block__title">90 pack <span class="oldprice">29.99$</span> <span class="price3">19.99$</span></h2>
+                <h2 class="block__title">90 pack <span class="oldprice">29.99$</span> <span class="price">19.99$</span> </h2>
                 <p class="block__subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, alias?</p>
-                <button class="block__button">Buy!</button>
+                <button class="block__button" id="thirdButton">Buy!</button>
             </div>
         </div>
     </div>
     <!--THIS IS TO BE REALISED SOON-->
     <div class="popup" id="popup">
         <div class="popup__body">
-            <h2 class="popup__title">Please, fill in your card information to order [product name]</h2>
+            <h2 class="popup__title">Please, fill in your card information to order <span id = "productName"></span></h2>
             <form action="" class="popup__content">
                 <div class="popup__cardfront">
                     <h6>front-side</h6>
@@ -98,7 +98,10 @@
                     <input class="popup__cvv" type="password" id="cvv" placeholder="CVV/CVC2">
                 </div>
             </form>
-            <button class="popup__button">Submit!</button>
+            <div class="popup__buttons">
+                <button class="popup__button">Submit!</button>
+                <button class="popup__closebutton" onclick="closePopup()">Close</button>
+            </div>
         </div>
     </div>
     
