@@ -26,26 +26,20 @@ function init() {
         }
     }, 1000);
 }
-
 window.onload = init();
 
 document.getElementById("firstButton").onclick = buttonHandler;
 document.getElementById("secondButton").onclick = buttonHandler;
 document.getElementById("thirdButton").onclick = buttonHandler;
-document.getElementById("closeButton").onclick = buttonHandler;
 
 function buttonHandler(e){
-    console.log(e.target);
     price = document.getElementsByClassName('price');
-    console.log(price);
     if(e.target.id == "firstButton"){
         openPopup("BakingSoda 6 pack for " + price[0].innerHTML);
     }
-    console.log(e.target);
     if(e.target.id == "secondButton"){
         openPopup("BakingSoda 30 pack for " + price[1].innerHTML);
     }
-    console.log(e.target);
     if(e.target.id == "thirdButton"){
         openPopup("BakingSoda 90 pack for " + price[2].innerHTML);
     }
@@ -57,7 +51,6 @@ function openPopup(message){
     popup.style.visibility = "visible";
     popupName.innerHTML = message;
 }
-
 
 function closePopup(){
     var popup = document.getElementById("popup");
