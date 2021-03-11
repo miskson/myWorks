@@ -205,6 +205,12 @@ body {
   background-color: #edd500;
 }
 
+.footer {
+  text-align: center;
+  font-size: 15px;
+  color: #040000;
+}
+
 .popup {
   position: fixed;
   z-index: 1;
