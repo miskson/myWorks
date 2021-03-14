@@ -11,7 +11,7 @@
 <body>
     <header class="site-header">
         <h1 class="site-header__title">Crypto<span>Exchange</span></h1>
-        <span class="site-header__Id">Check ID:<span id="CheckId">123</span></span>
+        <span class="site-header__Id">Check ID:<span id="CheckId"></span></span>
     </header>
     <div class="wrapper">
         <div class="exchange-window">
@@ -19,8 +19,8 @@
             <div class="exchange-window__inputs">
                 <div class="exchange-window__inputs-wrapper">
                     <div class="exchange-window__from-inputs">
-                        <h2 class="exchange-window__from-title">Sum in <span id="currencyType">UAH</span>:</h2>
-                        <select class="exchange-window__from-currency-select" name="fromcurrency" id="fromcurrency">
+                        <h2 class="exchange-window__from-title">Sum in <span id="fromCurrencyType"></span>:</h2>
+                        <select class="exchange-window__from-currency-select" id="fromcurrency">
                             <option value="UAH">UAH</option>
                             <option value="EUR">EUR</option>
                             <option value="BTC">BTC</option>
@@ -30,7 +30,7 @@
                     </div>
                     <img src="img/sync64.png" alt="image">
                     <div class="exchange-window__to-inputs">
-                        <h2 class="exchange-window__to-title">Sum in <span id="currencyType">BTC</span>:</h2>
+                        <h2 class="exchange-window__to-title">Sum in <span id="toCurrencyType">BTC</span>:</h2>
                         <select class="exchange-window__to-currency-select" name="tocurrency" id="tocurrency">
                             <option value="UAH">UAH</option>
                             <option value="EUR">EUR</option>
@@ -56,5 +56,6 @@
             </div>
         </div>
     </div>
+    <script src="./js/script.js" async></script>
 </body>
 </html>
