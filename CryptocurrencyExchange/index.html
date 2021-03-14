@@ -15,27 +15,45 @@
     </header>
     <div class="wrapper">
         <div class="exchange-window">
-            <div class="exchange-window__title">CryptoCurrency Exchange</div>
+            <h2 class="exchange-window__title">Exchange:</h2>
             <div class="exchange-window__inputs">
-                <select class="exchange-window__from-currency-select" name="fromcurrency" id="fromcurrency">
-                    <option value="UAH">UAH</option>
-                    <option value="EUR">EUR</option>
-                    <option value="BTC">BTC</option>
-                    <option value="ETH">ETH</option>
-                </select>
-                <input type="text">
-                <img src="img/sync64.png" alt="image">
-                <select class="exchange-window__to-currency-select" name="tocurrency" id="tocurrency">
-                    <option value="UAH">UAH</option>
-                    <option value="EUR">EUR</option>
-                    <option value="BTC">BTC</option>
-                    <option value="ETH">ETH</option>
-                </select>
-                <input type="text">
+                <div class="exchange-window__inputs-wrapper">
+                    <div class="exchange-window__from-inputs">
+                        <h2 class="exchange-window__from-title">Sum in <span id="currencyType">UAH</span>:</h2>
+                        <select class="exchange-window__from-currency-select" name="fromcurrency" id="fromcurrency">
+                            <option value="UAH">UAH</option>
+                            <option value="EUR">EUR</option>
+                            <option value="BTC">BTC</option>
+                            <option value="ETH">ETH</option>
+                        </select>
+                        <input type="text" id="frominput" placeholder="Sell">
+                    </div>
+                    <img src="img/sync64.png" alt="image">
+                    <div class="exchange-window__to-inputs">
+                        <h2 class="exchange-window__to-title">Sum in <span id="currencyType">BTC</span>:</h2>
+                        <select class="exchange-window__to-currency-select" name="tocurrency" id="tocurrency">
+                            <option value="UAH">UAH</option>
+                            <option value="EUR">EUR</option>
+                            <option value="BTC">BTC</option>
+                            <option value="ETH">ETH</option>
+                        </select>
+                        <input type="text" id="toinput" placeholder="Get">
+                    </div>
+                </div>
             </div>
-            <div class="exchange-window__button"><button>Exchange</button></div>
-            <div class="exchange-window__currency">Lorem ipsum dolor sit amet.</div>
-            <div class="exchange-window__reserve">Lorem ipsum dolor sit amet.</div>
+            <div class="exchange-window__button"><button id="exchangeButton">Exchange</button></div>
+            <div class="exchange-window__currency">
+                <h3>Currency:</h3>
+                <p>1BTC = 2 378 UAH</p>
+                <p>1ETH = 587 EUR</p>
+                <p>1EUR = 340 UAH</p>
+            </div>
+            <div class="exchange-window__reserve">
+                <h3>Reserve:</h3>
+                <p>4 BTC</p>
+                <p>30 000 UAH</p>
+                <p>18 ETH</p>
+            </div>
         </div>
     </div>
 </body>
