@@ -4,6 +4,7 @@ function init() {
         window.crypto.getRandomValues(checkIdArr);
         return checkIdArr[0];
     }
+
     var checkId = document.getElementById("CheckId");
     checkId.innerHTML = generateId();
 }
@@ -11,7 +12,6 @@ function init() {
 window.onload = init();
 
 document.getElementById("fromcurrency").addEventListener('change', getSelectedSellValue);
-
 
 function getSelectedSellValue() {
     console.log(document.getElementById("fromcurrency").value);
@@ -23,4 +23,5 @@ setSellValueTitle(getSelectedSellValue());
 function setSellValueTitle(value) {
     document.getElementById("fromCurrencyType").innerHTML = value;
 }
+
 

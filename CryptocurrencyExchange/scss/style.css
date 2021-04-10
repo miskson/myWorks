@@ -179,7 +179,7 @@ img {
 .exchange-window .exchange-window__inputs .exchange-window__inputs-wrapper .exchange-window__from-inputs h2,
 .exchange-window .exchange-window__inputs .exchange-window__inputs-wrapper .exchange-window__to-inputs h2 {
   color: white;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .exchange-window .exchange-window__inputs .exchange-window__inputs-wrapper .exchange-window__from-inputs input,
@@ -198,7 +198,7 @@ img {
 }
 
 .exchange-window .exchange-window__button button {
-  font-size: 25px;
+  font-size: 30px;
   padding: 10px;
   margin: 10px;
   background-color: mediumseagreen;
@@ -230,7 +230,7 @@ img {
   border: 3px solid #1f212b;
   padding: 5px;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
   -ms-grid-row: 4;
   grid-row: 4;
 }
@@ -307,7 +307,7 @@ img {
   }
 }
 
-@media screen and (max-width: 765px) and (min-width: 200px) {
+@media screen and (max-width: 765px) and (min-width: 350px) {
   .site-header .site-header__title {
     font-size: 25px;
   }
@@ -338,7 +338,76 @@ img {
   }
   .exchange-window .exchange-window__inputs .exchange-window__inputs-wrapper .exchange-window__from-inputs input,
   .exchange-window .exchange-window__inputs .exchange-window__inputs-wrapper .exchange-window__to-inputs input {
-    font-size: 30px;
+    font-size: 20px;
+    width: 60%;
+    height: 40px;
+  }
+  .exchange-window .exchange-window__inputs .exchange-window__inputs-wrapper .exchange-window__from-currency-select,
+  .exchange-window .exchange-window__inputs .exchange-window__inputs-wrapper .exchange-window__to-currency-select {
+    font-size: 20px;
+    height: 40px;
+  }
+  .exchange-window .exchange-window__currency {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  .exchange-window .exchange-window__reserve {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 5;
+    grid-row: 5;
+  }
+}
+
+@media screen and (max-width: 350px) and (min-width: 0px) {
+  body {
+    background-color: #1f212b27;
+  }
+  .site-header .site-header__title {
+    font-size: 20px;
+  }
+  .site-header .site-header__Id {
+    font-size: 12px;
+  }
+  .exchange-window {
+    border: none;
+    background-color: transparent;
+    margin: 0 auto;
+  }
+  .exchange-window .exchange-window__inputs {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .exchange-window .exchange-window__inputs .exchange-window__inputs-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .exchange-window .exchange-window__inputs .exchange-window__inputs-wrapper .exchange-window__from-inputs,
+  .exchange-window .exchange-window__inputs .exchange-window__inputs-wrapper .exchange-window__to-inputs {
+    margin: 0 auto;
+  }
+  .exchange-window .exchange-window__inputs .exchange-window__inputs-wrapper .exchange-window__from-inputs input,
+  .exchange-window .exchange-window__inputs .exchange-window__inputs-wrapper .exchange-window__to-inputs input {
+    font-size: 16px;
+    width: 10%;
+    height: 30px;
+  }
+  .exchange-window .exchange-window__inputs .exchange-window__inputs-wrapper .exchange-window__from-currency-select,
+  .exchange-window .exchange-window__inputs .exchange-window__inputs-wrapper .exchange-window__to-currency-select {
+    font-size: 16px;
+    height: 30px;
   }
   .exchange-window .exchange-window__currency {
     -ms-grid-column: 2;

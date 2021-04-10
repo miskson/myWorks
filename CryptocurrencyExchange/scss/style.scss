@@ -9,6 +9,7 @@ body{
     font-family: "Lato-Regular";
 }
 
+
 select, input, button {
     font-size: 25px;
     text-align: center;
@@ -94,7 +95,7 @@ img {
 
                 h2 {
                     color: white;
-                    font-size: 20px;
+                    font-size: 25px;
                 }
 
                 input {
@@ -112,7 +113,7 @@ img {
         grid-row: 3;
 
         button {
-            font-size: 25px;
+            font-size: 30px;
             padding: 10px;
             margin: 10px;
             background-color: mediumseagreen;
@@ -141,7 +142,7 @@ img {
         border: 3px solid #1f212b;
         padding: 5px;
         text-align: center;
-        font-size: 20px;
+        font-size: 30px;
         grid-row: 4;
         h3 {
             background-color: #1f212b;
@@ -155,7 +156,6 @@ img {
     }
 }
  
-
 
 @media screen and (max-width:1526px) and (min-width:1025px){
     .exchange-window {
@@ -206,7 +206,7 @@ img {
     }
 }
 
-@media screen and (max-width: 765px) and (min-width: 200px) {
+@media screen and (max-width: 765px) and (min-width: 350px) {
     .site-header {
         .site-header__title {
             font-size: 25px;
@@ -231,8 +231,16 @@ img {
                     margin: 0 auto;
                     
                     input {
-                        font-size: 30px;
+                        font-size: 20px;
+                        width: 60%;
+                        height: 40px;
                     }
+                }
+
+                .exchange-window__from-currency-select,
+                .exchange-window__to-currency-select {
+                    font-size: 20px;
+                    height: 40px;
                 }
             }
         }
@@ -248,3 +256,61 @@ img {
         }
     }
 } 
+
+@media screen and (max-width: 350px) and (min-width: 0px) {
+    body {
+        background-color:  #1f212b27;
+    }
+    
+    .site-header {
+        .site-header__title {
+            font-size: 20px;
+        }
+        .site-header__Id {
+            font-size: 12px;
+        }
+    }
+    
+    .exchange-window {
+        border: none;
+        background-color: transparent;
+        margin: 0 auto;
+        .exchange-window__inputs {
+            grid-column: 1/4;
+            grid-row: 2;
+
+            .exchange-window__inputs-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+
+                .exchange-window__from-inputs,
+                .exchange-window__to-inputs {
+                    margin: 0 auto;
+                    
+                    input {
+                        font-size: 16px;
+                        width: 10%;
+                        height: 30px;
+                    }
+                }
+
+                .exchange-window__from-currency-select,
+                .exchange-window__to-currency-select {
+                    font-size: 16px;
+                    height: 30px;
+                }
+            }
+        }
+
+        .exchange-window__currency {
+            grid-column: 2;
+            grid-row: 4;
+        }
+
+        .exchange-window__reserve {
+            grid-column: 2;
+            grid-row: 5;
+        }
+    }
+}
